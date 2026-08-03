@@ -6,11 +6,11 @@ const prizes = [
   { amount: 1000, tone: "violet" },
   { amount: 2000, tone: "teal" },
   { amount: 1000, tone: "violet" },
-  { amount: 3000, tone: "coral" },
+  { amount: 2000, tone: "teal" },
   { amount: 1000, tone: "violet" },
   { amount: 2000, tone: "teal" },
   { amount: 1000, tone: "violet" },
-  { amount: 5000, tone: "gold" },
+  { amount: 4000, tone: "gold" },
 ] as const;
 
 const formatPrize = (amount: number) => `₦${amount.toLocaleString("en-NG")}`;
@@ -79,7 +79,7 @@ export default function Home() {
               className="wheel"
               style={{ transform: `rotate(${rotation}deg)` }}
               role="img"
-              aria-label="Prize wheel with eight segments: four 1,000 NGN prizes, two 2,000 NGN prizes, one 3,000 NGN prize and one 5,000 NGN prize"
+              aria-label="Prize wheel with eight segments: four 1,000 NGN prizes, three 2,000 NGN prizes and one 4,000 NGN prize"
             >
               {prizes.map((prize, index) => (
                 <div

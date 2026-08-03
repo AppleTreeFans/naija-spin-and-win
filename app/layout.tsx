@@ -8,20 +8,18 @@ const siteUrl = githubOwner && githubRepository
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Spin & Win | Naija Rewards",
-  description: "Spin the lucky wheel for a chance to win up to ₦5,000.",
+  title: "Spin & Win | AppleTree",
+  description: "Spin the lucky wheel for a chance to win up to ₦4,000.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: "Spin & Win | Naija Rewards",
-    description: "Take a lucky spin and win up to ₦5,000.",
+    title: "Spin & Win | AppleTree",
+    description: "Take a lucky spin and win up to ₦4,000.",
     type: "website",
-    images: [{ url: "og.png", width: 1743, height: 909, alt: "Spin & Win — win up to ₦5,000" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spin & Win | Naija Rewards",
-    description: "Take a lucky spin and win up to ₦5,000.",
-    images: ["og.png"],
+    title: "Spin & Win | AppleTree",
+    description: "Take a lucky spin and win up to ₦4,000.",
   },
 };
 

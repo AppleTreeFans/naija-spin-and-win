@@ -56,10 +56,8 @@ export default function Home() {
 
       <section className="game-card" aria-labelledby="page-title">
         <header className="game-header">
-          <div className="brand-mark" aria-hidden="true">N</div>
-          <div className="brand-copy">
-            <span className="brand-name">Naija Rewards</span>
-            <span className="brand-status"><i /> Live draw</span>
+          <div className="brand-logo" aria-label="AppleTree">
+            <span className="brand-apple">Apple</span><span className="brand-tree">Tree</span>
           </div>
           <div className="secure-pill" aria-label="Fair and secure draw">
             <span aria-hidden="true">◆</span> Secure
@@ -69,7 +67,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">TODAY&apos;S LUCKY SPIN</p>
           <h1 id="page-title">Spin &amp; <span>Win</span></h1>
-          <p>One tap could land you up to <strong>₦5,000</strong>.</p>
+          <p>Follow us and get a discount.💥</p>
         </div>
 
         <div className="wheel-stage">
@@ -114,12 +112,6 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="prize-key" aria-label="Available prizes">
-          <span><i className="key-violet" />₦1,000 × 4</span>
-          <span><i className="key-teal" />₦2,000 × 2</span>
-          <span><i className="key-coral" />₦3,000</span>
-          <span><i className="key-gold" />₦5,000</span>
-        </div>
       </section>
 
       {winner && (

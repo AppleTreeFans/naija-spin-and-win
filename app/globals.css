@@ -81,27 +81,22 @@ button { font: inherit; }
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 9px;
+  min-height: 38px;
 }
 
-.brand-mark {
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-items: center;
-  border-radius: 11px;
-  color: white;
-  font-size: 19px;
-  font-weight: 900;
-  font-style: italic;
-  background: linear-gradient(145deg, #8866ff, #5032c8);
-  box-shadow: 0 7px 16px rgba(90, 56, 201, .25);
+.brand-logo {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: Arial Black, Arial, Helvetica, sans-serif;
+  font-size: clamp(22px, 7vw, 29px);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -.075em;
+  text-shadow: 0 2px 2px rgba(10, 40, 25, .12);
 }
 
-.brand-copy { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-name { font-size: 13px; font-weight: 850; letter-spacing: -.02em; }
-.brand-status { margin-top: 3px; font-size: 9px; color: #77738e; text-transform: uppercase; letter-spacing: .09em; }
-.brand-status i { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #35c76f; margin-right: 3px; box-shadow: 0 0 0 3px rgba(53,199,111,.12); }
+.brand-apple { color: #005535; }
+.brand-tree { color: #f20a12; }
 
 .secure-pill {
   margin-left: auto;
@@ -309,27 +304,6 @@ button { font: inherit; }
 .helper-text { margin: 15px 0 0; color: #8a859b; font-size: 10px; }
 .helper-text span { color: #a278ff; margin-right: 5px; }
 
-.prize-key {
-  width: 100%;
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px solid #ece9f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 7px 11px;
-  color: #6f6a7f;
-  font-size: 8px;
-  font-weight: 800;
-}
-.prize-key span { white-space: nowrap; }
-.prize-key i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; }
-.key-violet { background: var(--violet); }
-.key-teal { background: var(--teal); }
-.key-coral { background: var(--coral); }
-.key-gold { background: var(--gold); }
-
 .modal-backdrop {
   position: fixed;
   z-index: 20;
@@ -404,7 +378,6 @@ button { font: inherit; }
   .hero-copy { margin-top: 13px; margin-bottom: 7px; }
   .wheel-stage { --wheel-size: min(70vw, 292px); --label-offset: max(-27.2vw, -115px); margin-bottom: 10px; }
   .helper-text { margin-top: 12px; }
-  .prize-key { margin-top: 10px; padding-top: 9px; }
 }
 
 @media (min-width: 600px) {

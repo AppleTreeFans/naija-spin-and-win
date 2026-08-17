@@ -189,7 +189,7 @@ button { font: inherit; }
   background: conic-gradient(
     from -22.5deg,
     #7046e8 0deg 45deg,
-    #25b8bd 45deg 90deg,
+    #f4b72d 45deg 90deg,
     #7046e8 90deg 135deg,
     #25b8bd 135deg 180deg,
     #7046e8 180deg 225deg,
@@ -231,6 +231,7 @@ button { font: inherit; }
   transform: rotate(var(--segment-angle)) translateY(var(--label-offset)) rotate(var(--counter-angle));
 }
 
+.wheel-label:nth-of-type(2),
 .wheel-label:nth-of-type(8) { color: #4a3300; text-shadow: none; }
 
 .wheel-hub {

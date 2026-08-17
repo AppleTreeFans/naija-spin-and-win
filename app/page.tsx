@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 const prizes = [
-  { amount: 1500, tone: "violet" },
+  { amount: 2000, tone: "violet" },
   { amount: 3000, tone: "teal" },
-  { amount: 1500, tone: "violet" },
-  { amount: 2000, tone: "teal" },
-  { amount: 1500, tone: "violet" },
-  { amount: 2000, tone: "teal" },
-  { amount: 1500, tone: "violet" },
+  { amount: 2000, tone: "violet" },
+  { amount: 2500, tone: "teal" },
+  { amount: 2000, tone: "violet" },
+  { amount: 2500, tone: "teal" },
+  { amount: 2000, tone: "violet" },
   { amount: 4000, tone: "gold" },
 ] as const;
 
@@ -84,7 +84,7 @@ export default function Home() {
               className="wheel"
               style={{ transform: `rotate(${rotation}deg)` }}
               role="img"
-              aria-label="Prize wheel with eight segments: four 1,500 NGN prizes, two 2,000 NGN prizes, one 3,000 NGN prize and one 4,000 NGN prize"
+              aria-label="Prize wheel with eight segments: four 2,000 NGN prizes, two 2,500 NGN prizes, one 3,000 NGN prize and one 4,000 NGN prize"
             >
               {prizes.map((prize, index) => (
                 <div

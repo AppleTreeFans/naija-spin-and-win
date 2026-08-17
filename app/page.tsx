@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 const prizes = [
-  { amount: 1000, tone: "violet" },
+  { amount: 1500, tone: "violet" },
+  { amount: 3000, tone: "teal" },
+  { amount: 1500, tone: "violet" },
   { amount: 2000, tone: "teal" },
-  { amount: 1000, tone: "violet" },
+  { amount: 1500, tone: "violet" },
   { amount: 2000, tone: "teal" },
-  { amount: 1000, tone: "violet" },
-  { amount: 2000, tone: "teal" },
-  { amount: 1000, tone: "violet" },
+  { amount: 1500, tone: "violet" },
   { amount: 4000, tone: "gold" },
 ] as const;
 
@@ -67,7 +67,12 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">TODAY&apos;S LUCKY SPIN</p>
           <h1 id="page-title">Spin &amp; <span>Win</span></h1>
-          <p>Follow us and get a discount.💥</p>
+          <div className="promo-copy">
+            <p className="promo-title">🎁 <strong>Want an Extra Discount?</strong></p>
+            <p className="promo-steps">✅ Follow us<br />✅ Share this post</p>
+            <p>Get an <strong>extra discount</strong> after completing these steps! 🔥</p>
+            <p>Don&apos;t miss out—follow and share now! 📱✨</p>
+          </div>
         </div>
 
         <div className="wheel-stage">
@@ -79,7 +84,7 @@ export default function Home() {
               className="wheel"
               style={{ transform: `rotate(${rotation}deg)` }}
               role="img"
-              aria-label="Prize wheel with eight segments: four 1,000 NGN prizes, three 2,000 NGN prizes and one 4,000 NGN prize"
+              aria-label="Prize wheel with eight segments: four 1,500 NGN prizes, two 2,000 NGN prizes, one 3,000 NGN prize and one 4,000 NGN prize"
             >
               {prizes.map((prize, index) => (
                 <div

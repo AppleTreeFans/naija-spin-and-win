@@ -113,7 +113,7 @@ button { font: inherit; }
 .hero-copy {
   position: relative;
   z-index: 1;
-  margin: 22px 0 10px;
+  margin: 14px 0 6px;
   text-align: center;
 }
 
@@ -149,18 +149,23 @@ button { font: inherit; }
   transform: rotate(20deg);
 }
 
-.hero-copy > p:last-child {
-  margin: 8px 0 0;
+.promo-copy {
+  margin-top: 8px;
   color: #6f6a83;
-  font-size: 12px;
+  font-size: 10.5px;
+  line-height: 1.4;
 }
-.hero-copy strong { color: #272249; }
+.promo-copy p { margin: 0; }
+.promo-copy p + p { margin-top: 2px; }
+.promo-copy .promo-title { color: #4b4563; font-size: 12px; }
+.promo-copy .promo-steps { color: #5d576f; font-weight: 700; }
+.promo-copy strong { color: #272249; }
 
 .wheel-stage {
   position: relative;
   width: var(--wheel-size);
   height: var(--wheel-size);
-  margin: 6px auto 16px;
+  margin: 3px auto 12px;
 }
 
 .wheel-rim {
